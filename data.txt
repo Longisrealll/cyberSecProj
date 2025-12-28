@@ -1,0 +1,100 @@
+import firstImg from "../assets/firstImg.jpeg"
+import secondImg from "../assets/secondImg.jpeg"
+import thirdImg from "../assets/thirdImg.jpg"
+import React from "react";
+import { Canvas, useFrame } from "@react-three/fiber"
+import { useRef } from "react";
+import * as THREE from 'three'
+import { useGLTF } from '@react-three/drei'
+import "../App.css";
+import NavBar from "../NavBar.jsx"
+
+const Dimentional = ({position})=>{
+    const ref = useRef();
+    const {scene} = useGLTF('/donut.glb')
+
+    useFrame((state, delta)=>{
+        ref.current.rotation.x += delta*2
+        ref.current.rotation.y += delta*2
+        ref.current.rotation.z = Math.sin(state.clock.elapsedTime)*2
+    })
+    // return(
+    //     <mesh position={position} ref={ref}>
+    //         <torusGeometry  args={[0.5, 0.25, 16, 100, 6.2831]} />
+    //         <meshStandardMaterial color={color}></meshStandardMaterial>
+    //     </mesh>
+    // )
+    return(
+      <primitive object={scene} ref={ref} position={position} />
+    )
+}
+
+export default function App({onLogout, user}) {
+  // if(!user) return <p>Loading profile...</p>;
+  return (
+    <div className="page relative">
+      <NavBar user={user} onLogout={onLogout} />
+      <h1 className="title"><b><i>theFood</i></b> Webpage</h1>
+
+      {/* Block 1: Intro - image on left, text on right */}
+      <div className="block block-reverse">
+        <img style={{width: '40%', height: '40%', margin: '20px'}} src={firstImg} alt="Intro" />
+        <div>
+          <h2><i>Welcome</i></h2>
+        <p>Post your meals, discover new dishes, follow foodies, and explore what the world is eating — all in one delicious feed.</p>
+        <br></br>
+        <p>Whether you're a chef, a casual cook, or just here to browse —</p>
+        <br></br>
+        <strong>theFood</strong> is your table.
+        </div>
+      </div>
+
+      
+      {/* Block 3 */}
+      <div className="block">
+        <div>
+          <h2><i>Spoonacular</i></h2>
+          <p>Another part with information or media.</p>
+           <p>To help ensure a safe and enjoyable food-sharing experience,</p>
+            <p>we've integrated the powerful <a href={`https://spoonacular.com/food-api`} style={{color: '#e67e22', textDecoration: 'none'}}>Spoonacular API</a>.</p>
+            <p>This tool helps us detect common allergens, ingredients, and dietary tags</p>
+            <p>such as vegetarian, vegan, gluten-free, and more.</p>
+            <p>Whether you're browsing recipes or uploading your own dishes,</p>
+            <p>Spoonacular helps us flag ingredients and offer smarter suggestions</p>
+        </div>
+        <img style={{width: '30%', height: '30%'}} src={secondImg} alt="Section 2" />
+      </div>
+
+      {/* Block 2 */}
+      <div className="block block-reverse">
+        <div>
+          <h2><i>What's theFood?</i></h2>
+            <p>theFood is a social media platform designed for food lovers, home cooks, and anyone interested in discovering new dishes.</p>
+            <br />
+            <br />
+            <p>Users can share their favorite meals, explore recipes from around the world, and connect with a community that shares their passion for food.</p>
+            <br />
+            <br />
+            <p>Our integration with the Spoonacular API helps provide detailed information about ingredients, allergens, and dietary preferences to promote a safe and inclusive environment.</p>
+            <br />
+            <br />
+            <p>Whether you want to showcase your cooking skills or find inspiration for your next meal, theFood is the place to be.</p>
+        </div>
+        <img src={thirdImg} style={{width: '30%', height: '30%', margin: '20px'}} alt="Section 1" />
+      </div>
+
+      {/* Block 4: 3D Donut */}
+      <div className="block">
+        <div>
+          <h2><i>3D Donut Model</i></h2>
+          <p>Please feel free to explore the website</p>
+        </div>
+        <Canvas>
+            <directionalLight position={[1, 0, 3]}></directionalLight>
+            <Dimentional position={[0, 0, 0]} />
+        </Canvas>
+      </div>
+      <footer style={{fontSize: '5px', position: 'absolute', zIndex: 'revert-layer'}}>Aware that whatever happen to you is not my responsibility</footer>
+    </div>
+  );
+}
