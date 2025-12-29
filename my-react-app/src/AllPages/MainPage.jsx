@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import '../App.css'
+import { Navbar } from "../Navbar";
 // import React from "react";
 // import { Canvas, useFrame } from "@react-three/fiber"
 // import { useRef } from "react";
@@ -7,22 +8,20 @@ import '../App.css'
 // import { useGLTF } from '@react-three/drei'
 
 export function MainPage(){
+
+    let handleMouseEnter = () =>{}
     
     return(
         <div className='overallBackground'>
-            <nav>
-                <ul>
-                    {/*       <div
+            <Navbar />
+            {/* logo */}
+            <div className='logoClass'>
+                <div>
+                                        {/*       <div
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         style={{ padding: '10px', border: '1px solid black' }}
       > */}
-                    <li></li>
-                </ul>
-            </nav>
-            {/* logo */}
-            <div className='logoClass'>
-                <div>
                     This part should be centered
                     LOGO
                 </div>
