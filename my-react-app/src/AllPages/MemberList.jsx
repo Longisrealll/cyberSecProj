@@ -49,7 +49,7 @@ export function MemberList(){
                 <div>
                     <h3>Scrape/Mark</h3>
                     <p className="role"><b>Web exploit / Web dev</b></p>
-                    <span>Scrape/Mark wanna learn something cool.<br/> And he really like Rice Shower</span>
+                    <span>Scrape/Mark wanna learn something cool.</span>
                     <p>Websites:</p>
                     <ul>
                         <li><a href="https://github.com/Longisrealll">Github</a></li>
