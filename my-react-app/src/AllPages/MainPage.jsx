@@ -17,11 +17,11 @@ export function MainPage(){
             {/* logo */}
             <div className='logoClass'>
                 <div>
-                                        {/*       <div
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        style={{ padding: '10px', border: '1px solid black' }}
-      > */}
+                {/*<div
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={{ padding: '10px', border: '1px solid black' }}
+                > */}
                     This part should be centered
                     LOGO
                 </div>

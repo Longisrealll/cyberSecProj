@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import '../App.css'
 import { Navbar } from "../Navbar";
+import august from '../assets/898d5063bcc093c1d4c064429e73e726.jpg'
+import tree from '../assets/64128a4a3797197964f311fa_AdobeStock_561668998.jpeg'
+import mark from '../assets/Ee8XpU490hia5FM3JBACm17DbxgrqjHR.webp'
 
 export function MemberList(){
     return(
@@ -8,31 +11,71 @@ export function MemberList(){
             <Navbar />
             <h1>Active Members / Previous Members</h1>
             <div className="profileDiv">
-                <img alt="Data not av"></img>
+                <div className="pfpAugust">
+                    <img src={august} alt="Data not av"></img>
+                </div>
                 <div>
-                    <h3>Data1</h3>
-                    <p>Desc</p>
+                    <h3>August Lam</h3>
+                    <p className="role"><b>Team Manager / Cryptography</b></p>
+                    <span>August is an otaku and enjoy the noise of the overclustered decoration of stickers, 
+                        posters and other artworks in my life. She is an artist, reader, macromanager and 
+                        CTFer. </span>
+                    <p>Websites:</p>
+                    <ul>
+                        <li><a href="https://medium.com/@auggieldoggie">Medium</a></li>
+                        <li><a href="https://github.com/Auggie0w0">Github</a></li>
+                        <li><a href="https://auggiepage.vercel.app/">Personal website</a></li>
+                    </ul>
                 </div>
             </div>
             <div className="profileDiv">
-                <img alt="Data not av"></img>
+                <div className="pfpTree">
+                    <img src={tree} alt="Data not av"></img>
+                </div>
                 <div>
-                    <h3>Data2</h3>
-                    <p>Desc</p>
+                    <h3>Tree</h3>
+                    <p className="role"><b>Ex. Team Leader / Reverse Engineering / Binary Exploitation</b></p>
+                    <span>TreeTreeTreeTreeTreeTreeTreeTreeTree TreeTreeTreeTreeTreeTreeTreeTreeTree TreeTreeTreeTreeTreeTreeTreeTreeTree</span>
+                    <p>Websites:</p>
+                    <ul>
+                        <li><a href='https://www.treeblog.io/'>Personal blog</a></li>
+                    </ul>
                 </div>
             </div>
             <div className="profileDiv">
-                <img alt="Data not av"></img>
+                <div className="pfp">
+                    <img src={mark} alt="Data not av"></img>
+                </div>
                 <div>
-                    <h3>Data3</h3>
-                    <p>Desc</p>
+                    <h3>Scrape/Mark</h3>
+                    <p className="role"><b>Web exploit / Web dev</b></p>
+                    <span>Scrape/Mark wanna learn something cool.<br/> And he really like Rice Shower</span>
+                    <p>Websites:</p>
+                    <ul>
+                        <li><a href="https://github.com/Longisrealll">Github</a></li>
+                    </ul>
                 </div>
             </div>
             <div className="profileDiv">
-                <img alt="Data not av"></img>
+                <div className = "pfp">
+                    <img alt="Data not av"></img>
+                </div>
                 <div>
-                    <h3>Data4</h3>
-                    <p>Desc</p>
+                    <h3>Dysonsphere</h3>
+                    <p className="role"><b>Cryptography</b></p>
+                    <span>Dysonsphere is an Arch god</span>
+                    <p>Websites: N/A</p>
+                </div>
+            </div>
+            <div className="profileDiv">
+                <div className="pfp">
+                    <img alt="Data not av"></img>
+                </div>
+                <div>
+                    <h3>Jane</h3>
+                    <p className="role"><b>Web exploitation / Web dev</b></p>
+                    <span>Jane love sleep and definitely have very healthy schedule</span>
+                    <p>Websites: N/A</p>
                 </div>
             </div>
             <footer>Lang-era</footer>
