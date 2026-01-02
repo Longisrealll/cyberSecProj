@@ -95,29 +95,31 @@ nav ul{
 
 .logoClass h1{
   background-color: transparent;
-  font-size: 50px;
+  font-size: 150px;
   margin-bottom: 0;
   position: absolute;
   text-align:unset;
   width: fit-content;
-  left: 375px;
-  top: 248px;
+  left: 300px;
+  top: 100px;
   padding-left: 180px;
 }
 
 .logoClass p{
   margin-top: 0;
   position: absolute;
-  left: 375px;
+  left: 315px;
   top: 340px;
   padding-left: 185px;
 }
 
 #canvasDisplay{
   position: absolute;
-  left: 375px;
-  top: 230px;
+  left: 240px;
+  top: 160px;
   display: inline;
+  /* width: 350px; */
+  height: 250px;
 }
 
 .horizontalLine{

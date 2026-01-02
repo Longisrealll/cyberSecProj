@@ -6,9 +6,10 @@ export function MeetingPages(){
     return(
         <section className='overallBackground'>
             <Navbar />
-            <h1>Curious about syber security??</h1>
-            <p>We meet at blah blah time</p>
-            <p>In blah blah location</p>
+            <h1>You want to take part in Wangara?</h1>
+            <p>We meet at the Langara's Library</p>
+            <p>In room ... at flexible time</p>
+            <p>More information, please contact: <a href="mailto:alam77@mylangara.ca">alam77@mylangara.ca</a></p>
         </section>
     )
 }

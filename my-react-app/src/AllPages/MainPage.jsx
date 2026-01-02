@@ -9,13 +9,14 @@ import { useGLTF } from '@react-three/drei'
 const Dimentional = ({position, hovering})=>{
     const ref = useRef()
     const {scene} = useGLTF('/Wangara.glb')
-    const velocity = useRef(0)
     const maxLocation = 1.3*Math.PI / 2
     const minLocation = 0.3*Math.PI / 2
 
-    const box = new THREE.Box3().setFromObject(scene)
-    const center = box.getCenter(new THREE.Vector3())
-    scene.position.sub(center)
+    useEffect(() => {
+        const box = new THREE.Box3().setFromObject(scene)
+        const center = box.getCenter(new THREE.Vector3())
+        scene.position.sub(center)
+    }, [scene])
 
     // scene.background = new THREE.Color(0xEB652D);
 
@@ -23,21 +24,17 @@ const Dimentional = ({position, hovering})=>{
 
         if(!ref.current) return
 
-        if(hovering){
-            ref.current.rotation.x += 0.04
-            if (ref.current.rotation.x > maxLocation){
-                ref.current.rotation.x = maxLocation
-            }
-        }else{
-            ref.current.rotation.x -= 0.04
-            if (ref.current.rotation.x < minLocation){
-                ref.current.rotation.x = minLocation
-            }
-        }
+        let target = hovering ? maxLocation : minLocation
+        //i love lerp
+        ref.current.rotation.x = THREE.MathUtils.lerp(
+            ref.current.rotation.x,
+            target,
+            0.1
+        )
     })
 
     return(
-        <group ref={ref} position={position} scale={[1.5,1.5,1.5]}>
+        <group ref={ref} position={position} scale={[2,2,2]}>
             <primitive object={scene} />
         </group>
     )
@@ -97,10 +94,20 @@ export function MainPage(){
                 {/* flex box */}
                 <div>
                     <h2>Brief intro</h2>
+                    <span>Wangara was known as Langara CTF team. The team was meant to gather students who are interested in 
+                        Cyber Security or CTF challenges. No prior cyber security experience needed (you still need some CS skill ofc)
+                        just show up, enjoy your time with the team and learn everything that you want (we have enough resource)
+                        for your growth!!!<br/>
+                        At the end of the year, we will compete in one of the biggest competition, CyberSec.
+                    </span>
                     <h2>Schedule</h2>
+                    <span>Uhh, we will meet at somewhere in the weekend, if you want you can show up to see how
+                        we work / do CTF together. If you want to see more information, please click the 
+                        <i>Meeting</i> hyperlink on the nav bar.
+                    </span>
                 </div>
-                <div className='checking'>data</div>
-                {/* <img src={teamImage} alt="team image" /> */}
+                {/* <div className='checking'>data</div> */}
+                <img alt="team image" />
             </div>
             <footer>Lang-era</footer>
         </div>
