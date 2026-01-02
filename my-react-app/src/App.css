@@ -37,8 +37,10 @@ nav p{
 
 h1{
   position: sticky;
-  top: 20px;
+  top: 0;
   background-color: #FFEBD6;
+  width: 100%;
+  text-align: center;
 }
 
 .overallBackground{
@@ -89,6 +91,33 @@ nav ul{
   position: sticky;
   top:0;
   z-index: 0;
+}
+
+.logoClass h1{
+  background-color: transparent;
+  font-size: 50px;
+  margin-bottom: 0;
+  position: absolute;
+  text-align:unset;
+  width: fit-content;
+  left: 375px;
+  top: 248px;
+  padding-left: 180px;
+}
+
+.logoClass p{
+  margin-top: 0;
+  position: absolute;
+  left: 375px;
+  top: 340px;
+  padding-left: 185px;
+}
+
+#canvasDisplay{
+  position: absolute;
+  left: 375px;
+  top: 230px;
+  display: inline;
 }
 
 .horizontalLine{
