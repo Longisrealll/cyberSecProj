@@ -19,6 +19,9 @@ footer{
   width: 90%;
   background-color: #FE590B;
   z-index: 1;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 nav p{

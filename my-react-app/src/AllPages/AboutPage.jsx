@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar } from "../Navbar";
+import {FooterHere} from "../FooterUse"
 
 export function AboutPage({mode, setMode}){
 
@@ -32,7 +33,7 @@ export function AboutPage({mode, setMode}){
                     <p>Data4</p>
                 </div>
             </div>
-            <footer>Lang-era</footer>
+            <FooterHere />
         </section>
     )
 }

@@ -6,6 +6,7 @@ import { Canvas, useFrame } from "@react-three/fiber"
 import * as THREE from 'three'
 import { useGLTF } from '@react-three/drei'
 import {useGlitch} from 'react-powerglitch'
+import { FooterHere } from '../FooterUse'
 
 const Dimentional = ({position, hovering})=>{
     const ref = useRef()
@@ -129,7 +130,7 @@ export function MainPage({mode, setMode}){
                     <h2>Brief intro</h2>
                     <span>Wangara was known as Langara CTF team. The team was meant to gather students who are interested in 
                         Cyber Security or CTF challenges. No prior cyber security experience needed (you still need some CS skill ofc)
-                        just show up, enjoy your time with the team and learn everything that you want (we have enough resource)
+                        just show up, enjoy your time with the team and learn everything that you want (we have resources)
                         for your growth!!!<br/>
                         At the end of the year, we will compete in one of the biggest competition, CyberSci.
                     </span>
@@ -142,7 +143,7 @@ export function MainPage({mode, setMode}){
                 {/* <div className='checking'>data</div> */}
                 <img alt="team image" />
             </div>
-            <footer>Lang-era</footer>
+            <FooterHere />
         </div>
     )
 }

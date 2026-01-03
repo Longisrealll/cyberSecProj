@@ -19,7 +19,7 @@ export function Navbar({mode, setMode}){
             </ul>
             <div className="horizontalLine"></div>
             <div className="allIcons">
-                <a href=""><FontAwesomeIcon icon={faDiscord}></FontAwesomeIcon></a>
+                <a href="https://discord.gg/tKGMpMjhtm"><FontAwesomeIcon icon={faDiscord}></FontAwesomeIcon></a>
                 <a href="https://www.instagram.com/wangaractf/"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a>
                 <a href="" onMouseClick={changeMode}><FontAwesomeIcon icon={faCog}></FontAwesomeIcon></a>
             </div>

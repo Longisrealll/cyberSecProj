@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "../App.css"
 import { Navbar } from "../Navbar";
+import {FooterHere} from "../FooterUse"
 
 export function ChallengesPage({mode, setMode}){
 
@@ -31,7 +32,7 @@ export function ChallengesPage({mode, setMode}){
                 <h4>Author: </h4>
                 <p>Description: </p>
             </div> */}
-            <footer>Lang-era</footer>
+            <FooterHere />
         </section>
     )
 }

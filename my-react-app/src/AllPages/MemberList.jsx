@@ -4,6 +4,7 @@ import { Navbar } from "../Navbar";
 import august from '../assets/898d5063bcc093c1d4c064429e73e726.jpg'
 import tree from '../assets/tree_image.jpeg'
 import mark from '../assets/Ee8XpU490hia5FM3JBACm17DbxgrqjHR.webp'
+import { FooterHere } from "../FooterUse"
 
 export function MemberList({mode, setMode}){
     return(
@@ -87,7 +88,7 @@ export function MemberList({mode, setMode}){
                     <p>Websites: N/A</p>
                 </div>
             </div>
-            <footer>Lang-era</footer>
+            <FooterHere />
         </section>
     )
 }
