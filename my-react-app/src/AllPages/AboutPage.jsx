@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Navbar } from "../Navbar";
 
-export function AboutPage(){
+export function AboutPage({mode, setMode}){
 
 
     return(
         <section className='overallBackground'>
-            <Navbar />
+            <Navbar mode={mode} setMode={setMode} />
             <h1>About</h1>
             <div className="block">
                 <img alt="Data not av"></img>

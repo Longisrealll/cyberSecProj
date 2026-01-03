@@ -1,14 +1,17 @@
 import {Link, useNavigate} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDiscord } from '@fortawesome/free-brands-svg-icons'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+// import { faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { faCog } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons'
 
-export function Navbar(){
+export function Navbar({mode, setMode}){
+    const changeMode = ()=>{
+        setMode(!mode)
+    }
     return(
         <nav>
-            <p>W.</p>
+            <p><Link to="/">W.</Link></p>
             <ul>
-                <li><Link to='/'>Main page</Link></li>
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/members'>Team</Link></li>
                 <li><Link to='/challenges'>Challenges</Link></li>
@@ -18,6 +21,7 @@ export function Navbar(){
             <div className="allIcons">
                 <a href=""><FontAwesomeIcon icon={faDiscord}></FontAwesomeIcon></a>
                 <a href="https://www.instagram.com/wangaractf/"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a>
+                <a href="" onMouseClick={changeMode}><FontAwesomeIcon icon={faCog}></FontAwesomeIcon></a>
             </div>
         </nav>
     )

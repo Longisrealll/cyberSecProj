@@ -97,28 +97,33 @@ nav ul{
   background-color: transparent;
   font-size: 150px;
   margin-bottom: 0;
-  position: absolute;
+  /* position: absolute; */
   text-align:unset;
   width: fit-content;
-  left: 300px;
-  top: 100px;
-  padding-left: 180px;
+  padding-left: 220px;
 }
 
 .logoClass p{
   margin-top: 0;
-  position: absolute;
-  left: 315px;
-  top: 340px;
-  padding-left: 185px;
+  /* position: absolute; */
+  padding-left: 225px;
 }
+
+.glitchContainer{
+  position: absolute;
+  left: 255px;
+  top: 100px;
+  width: 60%;
+  height: 70%;
+  cursor: none;
+}
+
 
 #canvasDisplay{
   position: absolute;
-  left: 240px;
+  left: 255px;
   top: 160px;
   display: inline;
-  /* width: 350px; */
   height: 250px;
 }
 
@@ -137,6 +142,7 @@ nav ul{
   display: flex;
   justify-content: space-between;
   z-index: 1;
+  height: 90vh;
 }
 
 .checking{
@@ -187,6 +193,7 @@ nav ul{
 
 .role{
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .profileDiv img{
@@ -204,17 +211,17 @@ nav ul{
   overflow: hidden;
 }
 
+.desc{
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: bold;
+  width: fit-content;
+  background-color:aliceblue;
+}
+
 .pfpAugust{
   margin: 20px;
   width: 470px;
-  height: 150px;
-  /* border-radius: 50%; */
-  overflow: hidden; 
-}
-
-.pfpTree{
-  margin: 20px;
-  width: 350px;
   height: 150px;
   /* border-radius: 50%; */
   overflow: hidden; 

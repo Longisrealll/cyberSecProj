@@ -5,6 +5,7 @@ import React from "react";
 import { Canvas, useFrame } from "@react-three/fiber"
 import * as THREE from 'three'
 import { useGLTF } from '@react-three/drei'
+import {useGlitch} from 'react-powerglitch'
 
 const Dimentional = ({position, hovering})=>{
     const ref = useRef()
@@ -17,6 +18,11 @@ const Dimentional = ({position, hovering})=>{
         const center = box.getCenter(new THREE.Vector3())
         scene.position.sub(center)
     }, [scene])
+
+    scene.traverse(function(node){
+        if(node.isMesh)
+            node.castShadow = true;
+    })
 
     // scene.background = new THREE.Color(0xEB652D);
 
@@ -34,19 +40,47 @@ const Dimentional = ({position, hovering})=>{
     })
 
     return(
-        <group ref={ref} position={position} scale={[2,2,2]}>
-            <primitive object={scene} />
+        <group ref={ref} position={position}>
+            <primitive object={scene} scale={[2,2,2]} />
         </group>
     )
 }
 
-export function MainPage(){
+export function MainPage({mode, setMode}){
 
     const [stateHover, setHoverState] = useState(false)
 
+    const glitch = useGlitch({
+        "playMode": "hover",
+        "optimizeSeo": true,
+        "createContainers": true,
+        "hideOverflow": false,
+        "timing": {
+            "duration": 250,
+            "iterations": 1
+        },
+        "glitchTimeSpan": {
+            "start": 0,
+            "end": 1
+        },
+        "shake": {
+            "velocity": 15,
+            "amplitudeX": 0.2,
+            "amplitudeY": 0.2
+        },
+        "slice": {
+            "count": 6,
+            "velocity": 15,
+            "minHeight": 0.02,
+            "maxHeight": 0.15,
+            "hueRotate": true,
+            "cssFilters": ""
+        },
+        "pulse": false
+    });
+
     let handleMouseEnter = () =>{
         setHoverState(true)
-
     }
 
     let handleMouseLeave = ()=>{
@@ -57,13 +91,10 @@ export function MainPage(){
     useEffect(()=>{
         const box = document.getElementById("canvasDisplay")
         const text1 = document.getElementById("headerOne")
-        const text2 = document.getElementById("textTwo")
-
         const testing = ()=>{
-            let left = window.innerWidth*(25/96)
+            let left = window.innerWidth*(17/96)
             box.style.left = `${left}px`
             text1.style.left = `${left}px`
-            text2.style.left = `${left}px`
         }
 
         window.addEventListener('resize', testing)
@@ -74,19 +105,21 @@ export function MainPage(){
 
     return(
         <div className='overallBackground'>
-            <Navbar />
+            <Navbar mode={mode} setMode={setMode} />
             {/* logo */}
             <div className='logoClass'>
                 <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <div id="canvasDisplay">
-                        <Canvas background={0xEB652D}> 
-                            <directionalLight intensity={2} position={[2,3,5]}></directionalLight>  
+                        <Canvas shadows> 
+                            <directionalLight intensity={2} castShadow shadow-mapSize={[1024, 1024]} position={[2,3,5]}></directionalLight>  
                             <Dimentional position={[0,0,0]} hovering={stateHover}></Dimentional>
                         </Canvas>
                     </div>
                     {/* {console.log(window.screen.width)} */}
-                    <h1 id="headerOne">angara.</h1>
-                    <p id="textTwo">It's time for Lang-era</p>
+                    <div id="headerOne" ref={glitch.ref} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="glitchContainer">
+                    <h1>angara.</h1> 
+                    <p>{(stateHover)?("It's time for Lang-era"):("THE COLLEGE OF HIGHER LEARNING")}</p>
+                    </div>
                 </div>
             </div>
             {/* Brief intro */}
@@ -98,7 +131,7 @@ export function MainPage(){
                         Cyber Security or CTF challenges. No prior cyber security experience needed (you still need some CS skill ofc)
                         just show up, enjoy your time with the team and learn everything that you want (we have enough resource)
                         for your growth!!!<br/>
-                        At the end of the year, we will compete in one of the biggest competition, CyberSec.
+                        At the end of the year, we will compete in one of the biggest competition, CyberSci.
                     </span>
                     <h2>Schedule</h2>
                     <span>Uhh, we will meet at somewhere in the weekend, if you want you can show up to see how

@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import '../App.css'
 import { Navbar } from "../Navbar";
 import august from '../assets/898d5063bcc093c1d4c064429e73e726.jpg'
-import tree from '../assets/64128a4a3797197964f311fa_AdobeStock_561668998.jpeg'
+import tree from '../assets/tree_image.jpeg'
 import mark from '../assets/Ee8XpU490hia5FM3JBACm17DbxgrqjHR.webp'
 
-export function MemberList(){
+export function MemberList({mode, setMode}){
     return(
         <section className='overallBackground'>
-            <Navbar />
+            <Navbar mode={mode} setMode={setMode} />
             <h1>Active Members / Previous Members</h1>
             <div className="profileDiv">
                 <div className="pfpAugust">
@@ -16,7 +16,9 @@ export function MemberList(){
                 </div>
                 <div>
                     <h3>August Lam</h3>
-                    <p className="role"><b>Team Manager / Cryptography</b></p>
+                    <p className="role">Role: <b>Team Manager</b></p>
+                    <p className="role">Specialties: <b>Forensics</b></p>
+                    <p className="desc">Description</p>
                     <span>August is an otaku and enjoy the noise of the overclustered decoration of stickers, 
                         posters and other artworks in my life. She is an artist, reader, macromanager and 
                         CTFer. </span>
@@ -29,13 +31,15 @@ export function MemberList(){
                 </div>
             </div>
             <div className="profileDiv">
-                <div className="pfpTree">
+                <div className="pfp">
                     <img src={tree} alt="Data not av"></img>
                 </div>
                 <div>
                     <h3>Tree</h3>
-                    <p className="role"><b>Ex. Team Leader / Reverse Engineering / Binary Exploitation</b></p>
-                    <span>TreeTreeTreeTreeTreeTreeTreeTreeTree TreeTreeTreeTreeTreeTreeTreeTreeTree TreeTreeTreeTreeTreeTreeTreeTreeTree</span>
+                    <p className="role">Role: <b>Coach | Former Leader</b></p>
+                    <p className="role">Specialties: <b>Reverse Engineering | Binary Exploitation</b></p>
+                    <p className="desc">Description</p>
+                    <span>Crafting useful biomass since Devonian period </span>
                     <p>Websites:</p>
                     <ul>
                         <li><a href='https://www.treeblog.io/'>Personal blog</a></li>
@@ -48,7 +52,9 @@ export function MemberList(){
                 </div>
                 <div>
                     <h3>Scrape/Mark</h3>
-                    <p className="role"><b>Web exploit / Web dev</b></p>
+                    <p className="role">Role: <b>Web developer</b></p>
+                    <p className="role">Specialties <b>Web exploitation</b></p>
+                    <p className="desc">Description</p>
                     <span>Scrape/Mark wanna learn something cool.</span>
                     <p>Websites:</p>
                     <ul>
@@ -62,7 +68,8 @@ export function MemberList(){
                 </div>
                 <div>
                     <h3>Dysonsphere</h3>
-                    <p className="role"><b>Cryptography</b></p>
+                    <p className="role">Specialties: <b>Cryptography</b></p>
+                    <p className="desc">Description</p>
                     <span>Dysonsphere is an Arch god</span>
                     <p>Websites: N/A</p>
                 </div>
@@ -73,7 +80,9 @@ export function MemberList(){
                 </div>
                 <div>
                     <h3>Jane</h3>
-                    <p className="role"><b>Web exploitation / Web dev</b></p>
+                    <p className="role">Role: <b>Web developer</b></p>
+                    <p className="role">Specialties <b>Web exploitation</b></p>
+                    <p className="desc">Description</p>
                     <span>Jane love sleep and definitely have very healthy schedule</span>
                     <p>Websites: N/A</p>
                 </div>

@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import "../App.css"
 import { Navbar } from "../Navbar";
 
-export function ChallengesPage(){
+export function ChallengesPage({mode, setMode}){
 
 
         return(
         <section className='overallBackground h1InChallenges'>
-            <Navbar />
+            <Navbar mode={mode} setMode={setMode} />
             <p>We don't have any challenges just yet, but TreeCTF event is going to be held soon so stay tune :)</p>
             {/* <h1>Challenges</h1>
             <div className="nameSpce">
