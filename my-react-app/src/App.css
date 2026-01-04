@@ -1,14 +1,44 @@
+:root{
+  --boxes: #FA8F5D;
+  --boxRev: white;
+  --ovrText: black;
+  --ovrBack: #FFEBD6;
+  --navnfoot: #FE590B;
+  --linkColor: blue;
+}
+
+[theme-tracker="dark"]{
+  --boxes: #837873;
+  --boxRev: #C55A28;
+  --ovrText: white;
+  --ovrBack: #382B26;
+  --navnfoot: #CC4D12;
+  --linkColor: lightblue;
+}
+
 body{
   margin: 0;
-  background-color: #FFEBD6;
+  background-color: var(--ovrBack);
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+a{
+  color: var(--linkColor)
+}
+
+a:hover{
+  color: white;
+}
+
+nav a{
+  color: white;
 }
 
 h3{
   font-size: 25px;
   margin-bottom: 5px;
-  background-color: #FFEBD6;
+  background-color: var(--boxes);
   display: inline-box;
   padding-left: 10px;
   padding-right: 10px;
@@ -17,22 +47,20 @@ h3{
 
 footer{
   width: 90%;
-  background-color: #FE590B;
+  background-color: var(--navnfoot);
   z-index: 1;
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 
 nav p{
   display: inline;
-  margin-right: 15px;
-  margin-left: 15px;
   font-size: 20px;
 }
 
 .allIcons{
-  margin-left: 5%;
   display: flex;
   justify-content: space-evenly;
   width: 10%;
@@ -41,9 +69,10 @@ nav p{
 h1{
   position: sticky;
   top: 0;
-  background-color: #FFEBD6;
+  background-color: var(--ovrBack);
   width: 100%;
   text-align: center;
+  color: var(--ovrText);
 }
 
 .overallBackground{
@@ -51,14 +80,17 @@ h1{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: var(--ovrText);
 }
 
 nav{
   width: 90%;
-  background-color: #FE590B;
+  background-color: var(--navnfoot);
   height: 7vh;
   display: flex;
   align-items: center;
+  padding: 0 5px 0 5px;
+  justify-content: space-between;
   z-index: 2;
 }
 
@@ -70,12 +102,12 @@ nav ul li{
 
 nav ul li a{
   text-decoration: none;
-  color: black;
+  color: var(--ovrText);
 }
 
 nav ul li a:hover{
   text-decoration: none;
-  color: #FFEBD6;
+  color: var(--ovrBack);
 }
 
 nav ul{
@@ -101,6 +133,7 @@ nav ul{
   font-size: 150px;
   margin-bottom: 0;
   /* position: absolute; */
+  color: white;
   text-align:unset;
   width: fit-content;
   padding-left: 220px;
@@ -110,21 +143,23 @@ nav ul{
   margin-top: 0;
   /* position: absolute; */
   padding-left: 225px;
+  color: white;
 }
 
 .glitchContainer{
   position: absolute;
   left: 255px;
+  /* left: 0; */
   top: 100px;
   width: 60%;
-  height: 70%;
+  height: 50%;
   cursor: none;
 }
-
 
 #canvasDisplay{
   position: absolute;
   left: 255px;
+  /* left: 0; */
   top: 160px;
   display: inline;
   height: 250px;
@@ -134,22 +169,19 @@ nav ul{
   background-color: white;
   width: 5px;
   height: 90%;
-  margin-left: 40%;
+  /* margin-left: 40%; */
 }
 
 .bodySectionForMain{
-  background-color: white;
+  background-color: var(--boxRev);
   width:90%;
   padding: 20px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   z-index: 1;
-  height: 90vh;
-}
-
-.checking{
-  background-color: grey;
+  min-height: 90vh;
+  height: fit-content;
 }
 
 /* About page */
@@ -158,8 +190,9 @@ nav ul{
   display: flex;
   width: 90%;
   align-items: center;
-  background-color: white;
+  background-color: var(--boxRev);
   justify-content: space-evenly;
+  color: var(--ovrText);
   height: 70vh;
   flex-direction: row;
   margin-bottom: 20px;
@@ -174,10 +207,11 @@ nav ul{
 }
 
 .block-reverse {
-  background-color: #FA8F5D;
+  background-color: var(--boxes);
   display: flex;
   width: 90%;
   align-items: center;
+  color: var(--ovrText);
   justify-content: space-evenly;
   height: 70vh;
   flex-direction: row-reverse;
@@ -187,12 +221,17 @@ nav ul{
 /* Member list */
 
 .profileDiv{
-  background-color: #FA8F5D;
+  background-color: var(--boxes);
+  color: var(--ovrText);
   display: flex;
   width: 650px;
   height: auto;
   margin: 20px;
 }
+
+.profileDiv h3{
+  background-color: var(--ovrBack);
+ } 
 
 .role{
   margin-top: 0;
@@ -220,6 +259,7 @@ nav ul{
   font-weight: bold;
   width: fit-content;
   background-color:aliceblue;
+  color: black;
 }
 
 .pfpAugust{
@@ -235,7 +275,8 @@ nav ul{
 /* Challenges */
 
 .nameSpce{
-  background-color: white;
+  background-color: var(--boxRev);
+  color: var(--ovrText);
   margin-bottom: 20px;
   width: 90%;
   height: auto;

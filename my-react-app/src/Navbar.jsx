@@ -10,18 +10,20 @@ export function Navbar({mode, setMode}){
     }
     return(
         <nav>
-            <p><Link to="/">W.</Link></p>
-            <ul>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to='/members'>Team</Link></li>
-                <li><Link to='/challenges'>Challenges</Link></li>
-                <li><Link to='/posts'>Meetings</Link></li>
-            </ul>
-            <div className="horizontalLine"></div>
+            <div>
+                <p><Link to="/">W.</Link></p>
+                <ul>
+                    <li><Link to='/about'>About</Link></li>
+                    <li><Link to='/members'>Team</Link></li>
+                    <li><Link to='/challenges'>Challenges</Link></li>
+                    <li><Link to='/posts'>Meetings</Link></li>
+                </ul>
+            </div>
+            {/* <div className="horizontalLine"></div> */}
             <div className="allIcons">
-                <a href="https://discord.gg/tKGMpMjhtm"><FontAwesomeIcon icon={faDiscord}></FontAwesomeIcon></a>
-                <a href="https://www.instagram.com/wangaractf/"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a>
-                <a href="" onMouseClick={changeMode}><FontAwesomeIcon icon={faCog}></FontAwesomeIcon></a>
+                {/* <a href="https://discord.gg/tKGMpMjhtm"><FontAwesomeIcon icon={faDiscord}></FontAwesomeIcon></a>
+                <a href="https://www.instagram.com/wangaractf/"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a> */}
+                <a href="#" onClick={changeMode}><FontAwesomeIcon icon={faCog}></FontAwesomeIcon></a>
             </div>
         </nav>
     )

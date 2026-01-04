@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react'
 
+
 const JOKELIST = ["Pls use Arch :(", "Linux is cool", "Vim is your source of life",
     "First few months of Arch is Hell, trust the process!!!", "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "https://www.youtube.com/watch?v=n6Hwyq50YWc", "Yes CLI is very important for web challenges",

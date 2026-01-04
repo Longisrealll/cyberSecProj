@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Routes, Route } from 'react-router-dom'
@@ -11,14 +11,23 @@ import { MeetingPages } from './AllPages/MeetingPage.jsx'
 function App() {
   const [mode, setMode] = useState(false)
 
+  useEffect(()=>{
+    const root = document.documentElement;
+
+    root.setAttribute(
+      "theme-tracker",
+      mode ? "dark" : "light"
+    )
+  }, [mode])
+
   return (
     <>
     <Routes>
-      <Route mode={mode} setMode={setMode} path='/' element={<MainPage />}></Route>
-      <Route mode={mode} setMode={setMode} path='/about' element={<AboutPage />}></Route>
-      <Route mode={mode} setMode={setMode} path='/members' element={<MemberList />}></Route>
-      <Route mode={mode} setMode={setMode} path='/challenges' element={<ChallengesPage />}></Route>
-      <Route mode={mode} setMode={setMode} path='/posts' element={<MeetingPages />}></Route>
+      <Route path='/' element={<MainPage  mode={mode} setMode={setMode}/>}></Route>
+      <Route path='/about' element={<AboutPage  mode={mode} setMode={setMode}/>}></Route>
+      <Route path='/members' element={<MemberList  mode={mode} setMode={setMode}/>}></Route>
+      <Route path='/challenges' element={<ChallengesPage  mode={mode} setMode={setMode}/>}></Route>
+      <Route path='/posts' element={<MeetingPages  mode={mode} setMode={setMode}/>}></Route>
     </Routes>
     </>
   )

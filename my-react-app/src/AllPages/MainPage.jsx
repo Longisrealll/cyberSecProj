@@ -8,6 +8,9 @@ import { useGLTF } from '@react-three/drei'
 import {useGlitch} from 'react-powerglitch'
 import { FooterHere } from '../FooterUse'
 
+const LEFTLENGTH=20/96
+const OVRSIZE = 0
+
 const Dimentional = ({position, hovering})=>{
     const ref = useRef()
     const {scene} = useGLTF('/Wangara.glb')
@@ -88,12 +91,11 @@ export function MainPage({mode, setMode}){
         setHoverState(false)
     }
 
-    //cool idea but scraped, since this will only work in specific screen with this equation
     useEffect(()=>{
         const box = document.getElementById("canvasDisplay")
         const text1 = document.getElementById("headerOne")
         const testing = ()=>{
-            let left = window.innerWidth*(17/96)
+            let left = window.innerWidth*LEFTLENGTH
             box.style.left = `${left}px`
             text1.style.left = `${left}px`
         }
@@ -140,7 +142,6 @@ export function MainPage({mode, setMode}){
                         <i>Meeting</i> hyperlink on the nav bar.
                     </span>
                 </div>
-                {/* <div className='checking'>data</div> */}
                 <img alt="team image" />
             </div>
             <FooterHere />
