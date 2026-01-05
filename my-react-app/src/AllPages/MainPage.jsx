@@ -8,8 +8,6 @@ import { useGLTF } from '@react-three/drei'
 import {useGlitch} from 'react-powerglitch'
 import { FooterHere } from '../FooterUse'
 
-const LEFTLENGTH=20/96
-const OVRSIZE = 0
 
 const Dimentional = ({position, hovering})=>{
     const ref = useRef()
@@ -53,6 +51,7 @@ const Dimentional = ({position, hovering})=>{
 export function MainPage({mode, setMode}){
 
     const [stateHover, setHoverState] = useState(false)
+    // const [mobile, toggleMobile] = useState(false)
 
     const glitch = useGlitch({
         "playMode": "hover",
@@ -91,20 +90,22 @@ export function MainPage({mode, setMode}){
         setHoverState(false)
     }
 
-    useEffect(()=>{
-        const box = document.getElementById("canvasDisplay")
-        const text1 = document.getElementById("headerOne")
-        const testing = ()=>{
-            let left = window.innerWidth*LEFTLENGTH
-            box.style.left = `${left}px`
-            text1.style.left = `${left}px`
-        }
+    // useEffect(()=>{
+    //     const testing = ()=>{
+    //         if(window.innerWidth<=700){
+    //             toggleMobile(true)
+    //         }else{
+    //             toggleMobile(false)
+    //         }
+    //     }
 
-        window.addEventListener('resize', testing)
-        return ()=>{
-            window.removeEventListener('resize', testing)
-        }
-    }, [])
+    //     testing()
+
+    //     window.addEventListener('resize', testing)
+    //     return ()=>{
+    //         window.removeEventListener('resize', testing)
+    //     }
+    // }, [])
 
     return(
         <div className='overallBackground'>
