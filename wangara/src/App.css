@@ -368,6 +368,14 @@ nav ul{
     z-index: 0;
   }
 
+  nav ul li{
+    font-size: 12px;
+  }
+
+  nav p{
+    margin: 0;
+  }
+
   .logoClass h1 {
     background-color: transparent;
     font-size: 70px;
