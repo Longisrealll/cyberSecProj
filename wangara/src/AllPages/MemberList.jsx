@@ -26,7 +26,7 @@ export function MemberList({mode, setMode}){
                     <img src={(blueOne)?august2:august1} alt="Data not av"></img>
                 </div>
                 <div>
-                    <h3>August Lam</h3>
+                    <h3>August</h3>
                     <p className="role">Role: <b>Team Manager</b></p>
                     <p className="role">Specialties: <b>Forensics</b></p>
                     <p className="desc">Description</p>
