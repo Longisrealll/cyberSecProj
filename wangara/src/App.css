@@ -60,7 +60,8 @@ footer{
 nav p{
   display: inline;
   font-size: 27px;
-  margin: 0 15px;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 .allIcons{
