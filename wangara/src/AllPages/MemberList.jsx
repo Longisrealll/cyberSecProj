@@ -48,7 +48,6 @@ export function MemberList({mode, setMode}){
                     <h3>Tree</h3>
                     <p className="role">Role: <b>Coach | Former Leader</b></p>
                     <p className="role">Specialties: <b>Reverse Engineering | Binary Exploitation</b></p>
-                    <p className="desc">Description</p>
                     <span>Crafting useful biomass since Devonian period </span>
                     <ul>
                         <li><a href='https://www.treeblog.io/'><FontAwesomeIcon icon={faCube}></FontAwesomeIcon></a></li>
@@ -63,7 +62,6 @@ export function MemberList({mode, setMode}){
                     <h3>Scrape/Mark</h3>
                     <p className="role">Role: <b>Web developer</b></p>
                     <p className="role">Specialties <b>Web exploitation</b></p>
-                    <p className="desc">Description</p>
                     <span>Scrape/Mark wanna learn something cool.</span>
                     <ul>
                         <li><a href="https://github.com/Longisrealll"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></a></li>
@@ -77,7 +75,6 @@ export function MemberList({mode, setMode}){
                 <div>
                     <h3>Dysonsphere</h3>
                     <p className="role">Specialties: <b>Cryptography</b></p>
-                    <p className="desc">Description</p>
                     <span>Dysonsphere is an Arch god</span>
                     <p>N/A</p>
                 </div>
@@ -90,7 +87,6 @@ export function MemberList({mode, setMode}){
                     <h3>Jane</h3>
                     <p className="role">Role: <b>Web developer</b></p>
                     <p className="role">Specialties <b>Web exploitation | Cryptography</b></p>
-                    <p className="desc">Description</p>
                     <span>Jane loves sleep and definitely has very healthy schedule</span>
                     <p>Bet you can't find my social media</p>
                 </div>
