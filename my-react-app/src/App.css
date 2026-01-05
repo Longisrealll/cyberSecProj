@@ -400,6 +400,14 @@ nav ul{
     height: 150px;
   }
 
+  .profileDiv{
+    background-color: var(--boxes);
+    color: var(--ovrText);
+    display: flex;
+    width: 500px;
+    height: auto;
+    margin: 20px;
+}
 }
 
 @media (max-width: 600px){
@@ -455,4 +463,12 @@ nav ul{
     height: 150px;
   }
 
+  .profileDiv {
+    background-color: var(--boxes);
+    color: var(--ovrText);
+    display: flex;
+    width: 350px;
+    height: auto;
+    margin: 20px;
+  }
 }
