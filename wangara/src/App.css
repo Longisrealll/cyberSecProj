@@ -29,7 +29,7 @@ a{
 }
 
 a:hover{
-  color: white;
+  color: var(--ovrText);
 }
 
 nav a{
@@ -57,6 +57,10 @@ footer{
   flex-direction: column;
 }
 
+footer p{
+  margin: 0;
+}
+
 nav p{
   display: inline;
   font-size: 27px;
@@ -67,7 +71,7 @@ nav p{
 .allIcons{
   display: flex;
   justify-content: space-evenly;
-  width: 10%;
+  width: 15%;
 }
 
 h1{
@@ -240,7 +244,17 @@ nav ul{
 
 .profileDiv h3{
   background-color: var(--ovrBack);
- } 
+ }
+ 
+.profileDiv ul{
+  display: flex;
+  padding: 0;
+}
+
+.profileDiv ul li{
+  list-style-type: none;
+  margin-right: 10px;
+}
 
 .role{
   margin-top: 0;

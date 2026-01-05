@@ -2,7 +2,6 @@ import {Link, useNavigate} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { faCog } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons'
 
 export function Navbar({mode, setMode}){
     const changeMode = ()=>{

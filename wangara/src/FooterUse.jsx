@@ -19,6 +19,7 @@ export function FooterHere(){
     return(
         <>
         <footer>
+            <p>Hack with us!</p>
             <i>{quote}</i>
             <a href="https://ctftime.org/team/407537/">TimeCTF</a>
         </footer>
