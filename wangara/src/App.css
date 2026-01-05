@@ -21,6 +21,7 @@ body{
   background-color: var(--ovrBack);
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: 'Roboto Mono Variable', monospace;
 }
 
 a{
@@ -43,6 +44,7 @@ h3{
   padding-left: 10px;
   padding-right: 10px;
   width: fit-content;
+  font-family: 'Ruda Variable', sans-serif;
 }
 
 footer{
@@ -73,6 +75,7 @@ h1{
   width: 100%;
   text-align: center;
   color: var(--ovrText);
+  font-family: 'Source Serif Pro', serif;
 }
 
 .overallBackground{
@@ -126,6 +129,7 @@ nav ul{
   position: sticky;
   top:0;
   z-index: 0;
+  font-family: 'Lora Variable', serif;
 }
 
 .logoClass h1{
