@@ -4,6 +4,7 @@ import { Navbar } from "../Navbar";
 import august from '../assets/898d5063bcc093c1d4c064429e73e726.jpg'
 import tree from '../assets/tree_image.jpeg'
 import mark from '../assets/Ee8XpU490hia5FM3JBACm17DbxgrqjHR.webp'
+import jane from '../assets/7216643a-0ef4-440f-a639-29857d053aaf.jpg'
 import { FooterHere } from "../FooterUse"
 
 export function MemberList({mode, setMode}){
@@ -77,7 +78,7 @@ export function MemberList({mode, setMode}){
             </div>
             <div className="profileDiv">
                 <div className="pfp">
-                    <img alt="Data not av"></img>
+                    <img src={jane} alt="Data not av"></img>
                 </div>
                 <div>
                     <h3>Jane</h3>
