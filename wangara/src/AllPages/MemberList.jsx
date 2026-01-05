@@ -82,10 +82,10 @@ export function MemberList({mode, setMode}){
                 <div>
                     <h3>Jane</h3>
                     <p className="role">Role: <b>Web developer</b></p>
-                    <p className="role">Specialties <b>Web exploitation</b></p>
+                    <p className="role">Specialties <b>Web exploitation | Cryptography</b></p>
                     <p className="desc">Description</p>
-                    <span>Jane love sleep and definitely have very healthy schedule</span>
-                    <p>Websites: N/A</p>
+                    <span>Jane loves sleep and definitely has very healthy schedule</span>
+                    <p>Websites: Bet you can't find my social media</p>
                 </div>
             </div>
             <FooterHere />
