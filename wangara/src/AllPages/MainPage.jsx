@@ -131,12 +131,19 @@ export function MainPage({mode, setMode}){
                 {/* flex box */}
                 <div>
                     <h2>Brief intro</h2>
+                    /*
                     <span>Wangara was known as Langara CTF team. The team was meant to gather students who are interested in 
                         Cyber Security or CTF challenges. No prior cyber security experience needed (you still need some CS skill ofc)
                         just show up, enjoy your time with the team and learn everything that you want (we have resources)
                         for your growth!!!<br/>
                         At the end of the year, we will compete in one of the biggest competition, CyberSci.
                     </span>
+                    */
+                    <p>Wangara was known as Langara CTF team. If you are interested in Cybersecurity or CTF show up to our meetings! No prior experiences needed. 
+                        Join us for some fun in competing and grow your skills!</p>
+                    <p>At the end of each fall semester is our biggest yearly competition–CyberSci to which we build up our skills during the rest of the year. </p>
+                    <p>Activities for the club revolve mainly around completing and growing personal CTF skills through sources such as weekly competitions and PicoCTF gymnasium grinds. </p>
+                    <p>This semester we aim to host our first school wide CTF competition. The time will be set after the first midterms around the end of February. Details will be finalized mid January. </p>
                     <h2>Schedule</h2>
                     <span>Uhh, we will meet at somewhere in the weekend, if you want you can show up to see how
                         we work / do CTF together. If you want to see more information, please click the 
