@@ -137,10 +137,9 @@ export function MainPage({mode, setMode}){
                     <p>Activities for the club revolve mainly around completing and growing personal CTF skills through sources such as weekly competitions and PicoCTF gymnasium grinds. </p>
                     <p>This semester we aim to host our first school wide CTF competition. The time will be set after the first midterms around the end of February. Details will be finalized mid January. </p>
                     <h2>Schedule</h2>
-                    <span>Uhh, we will meet at somewhere in the weekend, if you want you can show up to see how
-                        we work / do CTF together. If you want to see more information, please click the 
-                        <i>Meeting</i> hyperlink on the nav bar.
-                    </span>
+                    <p>We will be meeting in person every Saturday at the Langara Library until we secure a classroom. Please note the in-person location is subjected to change. 
+                        Please make sure to check Discord and Instagram for more immediate updates! For more details, go to <i><a href="MeetingPage.jsx">Meetings</a></i>. 
+                    </p>
                 </div>
                 <img alt="team image" />
             </div>
