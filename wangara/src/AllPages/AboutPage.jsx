@@ -12,13 +12,22 @@ export function AboutPage({mode, setMode}){
             <div className="block">
                 <img alt="Data not av"></img>
                 <div>
-                    <p>Data1</p>
+                    <h2>Mottos</h2>
+                    <ul>
+                        <li>Have fun!</li>
+                        <li>Make awesome taglines!</li>
+                    </ul>
                 </div>
             </div>
             <div className="block-reverse">
                 <img alt="Data not av"></img>
                 <div>
-                    <p>Data2</p>
+                    <h2>Goals</h2>
+                    <ul>
+                        <li>Build a name for Lanagra starting by winning top 3 at CyberSci </li>
+                        <li>Expanding Club scope for more than just the CTF team but a cybersecurity club with workshops and presentations! </li>
+                        <li>Tutorship → specialization passed down or mutual assistance for when students leave Langara. </li>
+                    </ul>
                 </div>
             </div>
             <FooterHere />
