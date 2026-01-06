@@ -21,18 +21,6 @@ export function AboutPage({mode, setMode}){
                     <p>Data2</p>
                 </div>
             </div>
-            <div className="block">
-                <img alt="Data not av"></img>
-                <div>
-                    <p>Data3</p>
-                </div>
-            </div>
-            <div className="block-reverse">
-                <img alt="Data not av"></img>
-                <div>
-                    <p>Data4</p>
-                </div>
-            </div>
             <FooterHere />
         </section>
     )
