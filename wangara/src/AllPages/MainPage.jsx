@@ -141,7 +141,7 @@ export function MainPage({mode, setMode}){
                         Please make sure to check Discord and Instagram for more immediate updates! For more details, go to <i><a href="MeetingPage.jsx">Meetings</a></i>. 
                     </p>
                 </div>
-                <img alt="team image" />
+                < /*img alt="team image" /*/>
             </div>
             <FooterHere />
         </div>
