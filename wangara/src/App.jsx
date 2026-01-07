@@ -20,6 +20,7 @@ function App() {
     )
   }, [mode])
 
+  //Everything is currently hardcoded, need improvement later on
   return (
     <>
     <Routes>

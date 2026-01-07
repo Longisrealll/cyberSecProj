@@ -10,7 +10,7 @@ export function AboutPage({mode, setMode}){
             <Navbar mode={mode} setMode={setMode} />
             <h1>About</h1>
             <div className="block">
-                < /*img alt="Data not av"></img */>
+                {/* < /*img alt="Data not av"></img >*/}
                 <div>
                     <h2>Mottos</h2>
                     <ul>
@@ -20,7 +20,7 @@ export function AboutPage({mode, setMode}){
                 </div>
             </div>
             <div className="block-reverse">
-                < /*img alt="Data not av"></img */>
+                {/* < /*img alt="Data not av"></img >*/}
                 <div>
                     <h2>Goals</h2>
                     <ul>

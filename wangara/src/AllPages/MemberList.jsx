@@ -21,6 +21,18 @@ export function MemberList({mode, setMode}){
         <section className='overallBackground'>
             <Navbar mode={mode} setMode={setMode} />
             <h1>Active Members / Previous Members</h1>
+            <div className="block">
+                {/* < /*img alt="Data not av"></img >*/}
+                <div>
+                    <h2>Our team on CTFTime</h2>
+                    <span><a href="https://ctftime.org/team/407537/">CTFTime</a><br/><br/>
+                        CTFtime.org, an essential platform for the cybersecurity community, serves as a central hub for Capture The Flag (CTF) competitions, listing upcoming events, tracking team rankings, 
+                        and archiving past CTFs, making it the go-to resource for participants and organizers to find, join, and stay updated on hacking challenges.<br/><br/>
+
+                        Competition results or team accomplishments will be posted on LinkedIn, so please make sure to join!
+                    </span>
+                </div>
+            </div>
             <div className="profileDiv">
                 <div onMouseEnter={changePic} onMouseLeave={changePic} className="pfpAugust">
                     <img src={(blueOne)?august2:august1} alt="Data not av"></img>
@@ -29,7 +41,7 @@ export function MemberList({mode, setMode}){
                     <h3>August</h3>
                     <p className="role">Role: <b>Team Manager</b></p>
                     <p className="role">Specialties: <b>Forensics</b></p>
-                    <p className="desc">Description</p>
+                    <p className="desc">----------------------------------------</p>
                     <span>August is an otaku and enjoy the noise of the overclustered decoration of stickers, 
                         posters and other artworks in my life. She is an artist, reader, macromanager and 
                         CTFer. </span>
@@ -48,6 +60,7 @@ export function MemberList({mode, setMode}){
                     <h3>Tree</h3>
                     <p className="role">Role: <b>Coach | Former Leader</b></p>
                     <p className="role">Specialties: <b>Reverse Engineering | Binary Exploitation</b></p>
+                    <p className="desc">----------------------------------------</p>
                     <span>Crafting useful biomass since Devonian period </span>
                     <ul>
                         <li><a href='https://www.treeblog.io/'><FontAwesomeIcon icon={faCube}></FontAwesomeIcon></a></li>
@@ -55,13 +68,14 @@ export function MemberList({mode, setMode}){
                 </div>
             </div>
             <div className="profileDiv">
-                <div className="pfp">
+                <div className="pfpMar">
                     <img src={mark} alt="Data not av"></img>
                 </div>
                 <div>
                     <h3>Scrape/Mark</h3>
                     <p className="role">Role: <b>Web developer</b></p>
                     <p className="role">Specialties <b>Web exploitation</b></p>
+                    <p className="desc">----------------------------------------</p>
                     <span>Scrape/Mark wanna learn something cool.</span>
                     <ul>
                         <li><a href="https://github.com/Longisrealll"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></a></li>
@@ -75,18 +89,20 @@ export function MemberList({mode, setMode}){
                 <div>
                     <h3>Dysonsphere</h3>
                     <p className="role">Specialties: <b>Cryptography</b></p>
+                    <p className="desc">----------------------------------------</p>
                     <span>Dysonsphere is an Arch god</span>
                     <p>N/A</p>
                 </div>
             </div>
             <div className="profileDiv">
-                <div className="pfp">
+                <div className="pfpJane">
                     <img src={jane} alt="Data not av"></img>
                 </div>
                 <div>
                     <h3>Jane</h3>
                     <p className="role">Role: <b>Web developer</b></p>
                     <p className="role">Specialties <b>Web exploitation | Cryptography</b></p>
+                    <p className="desc">----------------------------------------</p>
                     <span>Jane loves sleep and definitely has very healthy schedule</span>
                     <p>Bet you can't find my social media</p>
                 </div>
