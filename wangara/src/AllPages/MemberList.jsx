@@ -74,7 +74,7 @@ export function MemberList({mode, setMode}){
                 <div>
                     <h3>Scrape/Mark</h3>
                     <p className="role">Role: <b>Web developer</b></p>
-                    <p className="role">Specialties <b>Web exploitation</b></p>
+                    <p className="role">Specialties: <b>Web exploitation</b></p>
                     <p className="desc">----------------------------------------</p>
                     <span>Scrape/Mark wanna learn something cool.</span>
                     <ul>
@@ -101,10 +101,10 @@ export function MemberList({mode, setMode}){
                 <div>
                     <h3>Jane</h3>
                     <p className="role">Role: <b>Web developer</b></p>
-                    <p className="role">Specialties <b>Web exploitation | Cryptography</b></p>
+                    <p className="role">Specialties: <b>Web exploitation | Cryptography</b></p>
                     <p className="desc">----------------------------------------</p>
                     <span>Jane loves sleep and definitely has very healthy schedule</span>
-                    <p>Bet you can't find my social media</p>
+                    <p>N/A</p>
                 </div>
             </div>
             <FooterHere />
