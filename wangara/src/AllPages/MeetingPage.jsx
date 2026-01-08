@@ -26,7 +26,7 @@ export function MeetingPages({mode, setMode}){
             <p>More information, please contact us through: </p>
             <div className="allIcons">
                 <a href="mailto:alam77@mylangara.ca"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a>
-                <a href="https://discord.gg/tKGMpMjhtm"><FontAwesomeIcon icon={faDiscord}></FontAwesomeIcon></a>
+                { /*<a href="https://discord.gg/tKGMpMjhtm"><FontAwesomeIcon icon={faDiscord}></FontAwesomeIcon></a>*/ }
                 <a href="https://www.instagram.com/wangaractf/"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a>
             </div>
         </section>
