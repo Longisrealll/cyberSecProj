@@ -1,9 +1,8 @@
 import {useEffect, useState} from 'react'
 
 
-const JOKELIST = ["Pls use Arch :(", "Linux is cool", "Vim is your source of life",
-    "First few months of Arch is Hell, trust the process!!!", "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "https://www.youtube.com/watch?v=n6Hwyq50YWc", "Yes CLI is very important for web challenges",
+const JOKELIST = ["Arch", "Linux is cool", "Vim is your source of life",
+    "First few months of Arch is Hell, trust the process!!!", "Yes CLI is very important for web challenges",
     "Tree of knowledge",
     "'It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.'-Stéphane Nappo",
     "'One of the main cyber-risks is to think they don't exist. The other is to try to treat all potential risks.'-Stéphane Nappo",
