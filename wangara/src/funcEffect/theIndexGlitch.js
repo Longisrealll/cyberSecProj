@@ -16,7 +16,7 @@ export async function ChangeText(){
             }
             while(i<longestText){
                 let currentText = data.innerText
-                await sleep(1)
+                await sleep(2)
                 let nextOne = finalText[i]
                 if(finalText[i]==undefined){
                     nextOne = String.fromCharCode(32)
@@ -35,7 +35,7 @@ export async function ChangeText(){
                 randomData = Math.random() * 127;
             }
             let currentText = data.innerText
-            await sleep(1)
+            await sleep(2)
             currentText = currentText.substring(0, i) + String.fromCharCode(randomData) + currentText.substring(i+1, theText)
             data.innerText = currentText;
 
