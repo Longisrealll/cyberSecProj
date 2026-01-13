@@ -6,15 +6,22 @@ export async function ChangeText(){
     for(let k = 0; k<2; k++){
         let i=0;
         let finalText = "THE COLLEGE OF HIGHER LEARNING"
+        let longestText = finalText.length
 
         if(k==1){
             if(theUnchangeText == finalText){
-                finalText = "____It's time for Lang-era____"
+                finalText = "It's time for Lang-era"
+                if(longestText < finalText.length)
+                    longestText = finalText.length
             }
-            while(i<theText){
+            while(i<longestText){
                 let currentText = data.innerText
                 await sleep(1)
-                currentText = currentText.substring(0, i) + finalText[i] + currentText.substring(i+1)
+                let nextOne = finalText[i]
+                if(finalText[i]==undefined){
+                    nextOne = String.fromCharCode(32)
+                }
+                currentText = finalText.substring(0, i) + nextOne + currentText.substring(i+1)
                 data.innerText = currentText;
                 
                 i++;
