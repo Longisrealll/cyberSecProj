@@ -137,14 +137,14 @@ export function MainPage({mode, setMode}){
                 {/* flex box */}
                 <div>
                     <h2>Brief intro</h2>
-                    <p>Wangara was known as Langara CTF team. If you are interested in Cybersecurity or CTF show up to our meetings! No prior experiences needed. 
-                        Join us for some fun in competing and grow your skills!</p>
+                    <p> Wangara was known as Langara CTF team.  No prior experiences needed so come and learn a thing or two if you are interested in Cybersecurity or CTF! 
+                        Join us for some fun to level up your technical skills!</p>
                     <p>At the end of each fall semester is our biggest yearly competition–CyberSci to which we build up our skills during the rest of the year. </p>
-                    <p>Activities for the club revolve mainly around completing and growing personal CTF skills through sources such as weekly competitions and PicoCTF gymnasium grinds. </p>
+                    <p>Activities for the club revolve mainly around completing and growing personal CTF skills through sources such as weekly competitions and PicoCTF gymnasium grinds and online competitions. </p>
                     <p>This semester we aim to host our first school wide CTF competition. The time will be set after the first midterms around the end of February. Details will be finalized mid January. </p>
                     <h2>Schedule</h2>
-                    <p>We will be meeting in person every Saturday at the Langara Library until we secure a classroom. Please note the in-person location is subjected to change. 
-                        Please make sure to check Discord and Instagram for more immediate updates! For more details, go to <Link to='/posts'>Meetings</Link>
+                    <p>We will be meeting in person every Saturday in the L building. Please note the in-person location is subjected to change. 
+                        Check Discord and Instagram for more immediate updates! For more details, go to <Link to='/posts'>Meetings</Link>
                     </p>
                 </div>
                 {/* < /*img alt="team image" >*/}
