@@ -8,6 +8,7 @@ import { useGLTF } from '@react-three/drei'
 import {useGlitch} from 'react-powerglitch'
 import { FooterHere } from '../FooterUse'
 import {Link, useNavigate} from 'react-router-dom';
+import {ChangeText, sleep} from '../funcEffect/theIndexGlitch.js'
 
 
 const Dimentional = ({position, hovering})=>{
@@ -86,10 +87,12 @@ export function MainPage({mode, setMode}){
 
     let handleMouseEnter = () =>{
         setHoverState(true)
+        ChangeText();
     }
 
     let handleMouseLeave = ()=>{
         setHoverState(false)
+        ChangeText();
     }
 
     // useEffect(()=>{
@@ -124,7 +127,8 @@ export function MainPage({mode, setMode}){
                     {/* {console.log(window.screen.width)} */}
                     <div id="headerOne" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="glitchContainer">
                     <h1>angara.</h1> 
-                    <p>{(stateHover)?("It's time for Lang-era"):("THE COLLEGE OF HIGHER LEARNING")}</p>
+                    {/* <p id="tryingId">{(stateHover)?("It's time for Lang-era"):("THE COLLEGE OF HIGHER LEARNING")}</p> */}
+                    <p id="tryingId">THE COLLEGE OF HIGHER LEARNING</p>
                     </div>
                 </div>
             </div>
