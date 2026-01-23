@@ -16,6 +16,7 @@ export function Navbar({mode, setMode}){
                     <li><Link to='/members'>Team</Link></li>
                     <li><Link to='/challenges'>Challenges</Link></li>
                     <li><Link to='/posts'>Meetings</Link></li>
+                    <li className="promotion"><Link to='/event'><i>Event!!</i></Link></li>
                 </ul>
             </div>
             {/* <div className="horizontalLine"></div> */}

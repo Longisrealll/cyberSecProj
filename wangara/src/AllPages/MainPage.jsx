@@ -8,7 +8,7 @@ import { useGLTF } from '@react-three/drei'
 import {useGlitch} from 'react-powerglitch'
 import { FooterHere } from '../FooterUse'
 import {Link, useNavigate} from 'react-router-dom';
-import {ChangeText, sleep} from '../funcEffect/theIndexGlitch.js'
+import {ChangeText, sleep, ShuffleAllAtOnce} from '../funcEffect/indexGlitch.js'
 
 
 const Dimentional = ({position, hovering})=>{
@@ -87,12 +87,12 @@ export function MainPage({mode, setMode}){
 
     let handleMouseEnter = () =>{
         setHoverState(true)
-        ChangeText();
+        ChangeText("It's time for the Lang-era", 2, "tryingId");
     }
 
     let handleMouseLeave = ()=>{
         setHoverState(false)
-        ChangeText();
+        ChangeText("THE COLLEGE OF HIGHER LEARNING", 2, "tryingId");
     }
 
     // useEffect(()=>{

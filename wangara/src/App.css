@@ -36,6 +36,21 @@ nav a{
   color: white;
 }
 
+/* this is nav */
+.promotion{
+  background-color: var(--ovrBack);
+  color: var(--ovrText);
+}
+
+.promotionNoHov{
+  background-color: var(--ovrBack);
+  color: var(--ovrText);
+}
+
+.promotion:hover{
+  background-color: var(--linkColor);
+}
+
 h3{
   font-size: 25px;
   margin-bottom: 5px;
@@ -225,7 +240,7 @@ nav ul{
 
 .block-reverse {
   background-color: var(--boxes);
-  display: flex;
+  /* display: flex; */
   width: 90%;
   align-items: left;
   color: var(--ovrText);

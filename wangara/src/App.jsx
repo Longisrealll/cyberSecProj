@@ -7,6 +7,7 @@ import { AboutPage } from './AllPages/AboutPage.jsx'
 import { MemberList } from './AllPages/MemberList.jsx'
 import { ChallengesPage } from './AllPages/CHallenges.jsx'
 import { MeetingPages } from './AllPages/MeetingPage.jsx'
+import { EventPage } from './AllPages/LangaraCtf.jsx'
 
 function App() {
   const [mode, setMode] = useState(false)
@@ -29,6 +30,7 @@ function App() {
       <Route path='/members' element={<MemberList  mode={mode} setMode={setMode}/>}></Route>
       <Route path='/challenges' element={<ChallengesPage  mode={mode} setMode={setMode}/>}></Route>
       <Route path='/posts' element={<MeetingPages  mode={mode} setMode={setMode}/>}></Route>
+      <Route path='/event' element={<EventPage  mode={mode} setMode={setMode}/>}></Route>
     </Routes>
     </>
   )
