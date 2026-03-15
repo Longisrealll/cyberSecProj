@@ -6,6 +6,7 @@ import august2 from '../assets/august_white.png'
 import tree from '../assets/tree_image.jpeg'
 import mark from '../assets/Ee8XpU490hia5FM3JBACm17DbxgrqjHR.webp'
 import jane from '../assets/7216643a-0ef4-440f-a639-29857d053aaf.jpg'
+import dyl from '../assets/CATS.png'
 import { FooterHere } from "../FooterUse"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMedium, faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -34,12 +35,12 @@ export function MemberList({mode, setMode}){
                 </div>
             </div>
             <div className="profileDiv">
-                <div onMouseEnter={changePic} onMouseLeave={changePic} className="pfpAugust">
+                <div onMouseEnter={changePic} onMouseLeave={changePic} className="pfpMar">
                     <img src={(blueOne)?august2:august1} alt="Data not av"></img>
                 </div>
-                <div>
+                <div className="restrict">
                     <h3>August</h3>
-                    <p className="role">Role: <b>Team Manager</b></p>
+                    <p className="role">Role: <b>Team Manager | HR</b></p>
                     <p className="role">Specialties: <b>Forensics</b></p>
                     <p className="desc">----------------------------------------</p>
                     <span>August is an otaku and enjoy the noise of the overclustered decoration of stickers, 
@@ -53,10 +54,10 @@ export function MemberList({mode, setMode}){
                 </div>
             </div>
             <div className="profileDiv">
-                <div className="pfp">
+                <div className="pfpMar">
                     <img src={tree} alt="Data not av"></img>
                 </div>
-                <div>
+                <div className="restrict">
                     <h3>Tree</h3>
                     <p className="role">Role: <b>Coach | Former Leader</b></p>
                     <p className="role">Specialties: <b>Reverse Engineering | Binary Exploitation</b></p>
@@ -71,7 +72,7 @@ export function MemberList({mode, setMode}){
                 <div className="pfpMar">
                     <img src={mark} alt="Data not av"></img>
                 </div>
-                <div>
+                <div className="restrict">
                     <h3>Scrape/Mark</h3>
                     <p className="role">Role: <b>Web developer</b></p>
                     <p className="role">Specialties: <b>Web exploitation</b></p>
@@ -83,24 +84,25 @@ export function MemberList({mode, setMode}){
                 </div>
             </div>
             <div className="profileDiv">
-                <div className = "pfp">
-                    <img alt="Data not av"></img>
+                <div className = "pfpMar">
+                    <img src={dyl} alt="Data not av"></img>
                 </div>
-                <div>
-                    <h3>Dysonsphere</h3>
+                <div className="restrict">
+                    <h3>Dyson</h3>
+                    <p className="role">Role: <b>Wangara team leader</b></p>
                     <p className="role">Specialties: <b>Cryptography</b></p>
                     <p className="desc">----------------------------------------</p>
-                    <span>Dysonsphere is an Arch god</span>
+                    <span>Standing on the shoulder of giants.</span>
                     <p>N/A</p>
                 </div>
             </div>
             <div className="profileDiv">
-                <div className="pfpJane">
+                <div className="pfpMar">
                     <img src={jane} alt="Data not av"></img>
                 </div>
-                <div>
+                <div className="restrict">
                     <h3>Jane</h3>
-                    <p className="role">Role: <b>Web developer</b></p>
+                    <p className="role">Role: <b>Social Media | Transcriber</b></p>
                     <p className="role">Specialties: <b>Web exploitation | Cryptography</b></p>
                     <p className="desc">----------------------------------------</p>
                     <span>Jane loves sleep and definitely has very healthy schedule</span>

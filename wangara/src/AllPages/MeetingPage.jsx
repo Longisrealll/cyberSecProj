@@ -19,9 +19,9 @@ export function MeetingPages({mode, setMode}){
             <p><strong>LOCATION: </strong>Langara Library | L215 (Do not enter Library) </p>
             ---------------------------
             <h2>Online</h2>
-            <figcaption>(Grind CTF/writeups, keeping up with <a href="https://www.google.com/url?q=https://leaderboarded.com/board/zvgdqhzpvfdbr/?public%3Dtrue&sa=D&source=docs&ust=1767816372199823&usg=AOvVaw3Q-XSn3I7wqz6PcJ5yb6ND">leader board</a>)</figcaption>
-            <p><strong>TIME: </strong>DAILY | 9:30 pm - 10:00 pm /t <i>Not strict hours, just hop on and off</i></p>
-            <p><strong>LOCATION: </strong>Discord #!Grind Chamber</p>
+            <figcaption>(Grind CTF/writeups, keeping up with leader board)</figcaption>
+            <p><strong>TIME: </strong>DAILY | 9:30 pm - 10:00 pm <i>(Not strict hours, just hop on and off)</i></p>
+            <p><strong>LOCATION: </strong>Discord #Grind Chamber</p>
             ---------------------------
             <p>More information, please contact us through: </p>
             <div className="allIcons">

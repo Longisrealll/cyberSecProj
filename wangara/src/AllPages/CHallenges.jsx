@@ -9,7 +9,7 @@ export function ChallengesPage({mode, setMode}){
         return(
         <section className='overallBackground h1InChallenges'>
             <Navbar mode={mode} setMode={setMode} />
-            <p>We don't have any challenges just yet, but TreeCTF event is going to be held soon so stay tune :)</p>
+            <p>We don't have any challenges just yet</p>
             {/* <h1>Challenges</h1>
             <div className="nameSpce">
                 <h2>Challenge name</h2>
