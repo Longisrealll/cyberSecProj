@@ -53,6 +53,7 @@ const Dimentional = ({position, hovering})=>{
 export function MainPage({mode, setMode}){
 
     const [stateHover, setHoverState] = useState(false)
+    const [timer, setTimer] = useState(20000)
     // const [mobile, toggleMobile] = useState(false)
 
     // const glitch = useGlitch({
@@ -86,38 +87,35 @@ export function MainPage({mode, setMode}){
     // });
 
     let handleMouseEnter = () =>{
+        setTimer(20000)
         setHoverState(true)
         ChangeText("It's time for the Lang-era", 2, "tryingId");
     }
 
     let handleMouseLeave = ()=>{
+        setTimer(20000)
         setHoverState(false)
         ChangeText("THE COLLEGE OF HIGHER LEARNING", 2, "tryingId");
     }
 
-    // useEffect(()=>{
-    //     const testing = ()=>{
-    //         if(window.innerWidth<=700){
-    //             toggleMobile(true)
-    //         }else{
-    //             toggleMobile(false)
-    //         }
-    //     }
+    useEffect(()=>{
+        const interval = setInterval(() => {
+            if(!stateHover){
+                handleMouseEnter();
+            }else{
+                handleMouseLeave();
+            }
+        }, timer);
 
-    //     testing()
-
-    //     window.addEventListener('resize', testing)
-    //     return ()=>{
-    //         window.removeEventListener('resize', testing)
-    //     }
-    // }, [])
+        return () => clearInterval(interval)
+    }, [stateHover, timer])
 
     return(
         <div className='overallBackground'>
             <Navbar mode={mode} setMode={setMode} />
             {/* logo */}
             <div className='logoClass'>
-                <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                <div onMousEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <div id="canvasDisplay">
                         <Canvas shadows> 
                             <directionalLight intensity={2} castShadow shadow-mapSize={[1024, 1024]} position={[2,3,5]}></directionalLight>  

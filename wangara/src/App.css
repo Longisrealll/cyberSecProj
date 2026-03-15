@@ -459,6 +459,7 @@ nav ul{
 }
 
 @media (max-width: 600px){
+
   .logoClass {
     width: 90%;
     background-color: black;
@@ -474,11 +475,7 @@ nav ul{
 
   nav{
     height: fit-content;
-    padding-bottom: 20px;
-  }
-
-  nav p{
-    margin-left: 10px;
+    padding-bottom: 10px;
   }
 
   .logoClass h1 {
@@ -527,5 +524,14 @@ nav ul{
     width: 350px;
     height: auto;
     margin: 20px;
+  }
+
+  p, h1, h2, a, h3, h4, li{
+    font-size: 10px;
+  }
+
+  nav p a{
+    margin-left: 10px;
+    font-size: 15px;
   }
 }
