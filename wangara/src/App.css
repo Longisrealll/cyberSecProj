@@ -269,6 +269,11 @@ nav ul{
   padding-right: 20px;
 }
 
+.quote{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 .restrict{
   flex: 1;
 }

@@ -55,21 +55,6 @@ export function MemberList({mode, setMode}){
             </div>
             <div className="profileDiv">
                 <div className="pfpMar">
-                    <img src={tree} alt="Data not av"></img>
-                </div>
-                <div className="restrict">
-                    <h3>Tree</h3>
-                    <p className="role">Role: <b>Coach | Former Leader</b></p>
-                    <p className="role">Specialties: <b>Reverse Engineering | Binary Exploitation</b></p>
-                    <p className="desc">----------------------------------------</p>
-                    <span>Crafting useful biomass since Devonian period </span>
-                    <ul>
-                        <li><a href='https://www.treeblog.io/'><FontAwesomeIcon icon={faCube}></FontAwesomeIcon></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div className="profileDiv">
-                <div className="pfpMar">
                     <img src={mark} alt="Data not av"></img>
                 </div>
                 <div className="restrict">
@@ -107,6 +92,22 @@ export function MemberList({mode, setMode}){
                     <p className="desc">----------------------------------------</p>
                     <span>Jane loves sleep and definitely has very healthy schedule</span>
                     <p>N/A</p>
+                </div>
+            </div>
+            <h2>Retired Members</h2><p class="quote"><i>"The beautiful journey of today can only begin when we learn to let go of yesterday."-Steve Maraboli</i></p>
+            <div className="profileDiv">
+                <div className="pfpMar">
+                    <img src={tree} alt="Data not av"></img>
+                </div>
+                <div className="restrict">
+                    <h3>Tree</h3>
+                    <p className="role">Role: <b>Former Leader</b></p>
+                    <p className="role">Specialties: <b>Reverse Engineering | Binary Exploitation</b></p>
+                    <p className="desc">----------------------------------------</p>
+                    <span>Crafting useful biomass since Devonian period </span>
+                    <ul>
+                        <li><a href='https://www.treeblog.io/'><FontAwesomeIcon icon={faCube}></FontAwesomeIcon></a></li>
+                    </ul>
                 </div>
             </div>
             <FooterHere />
