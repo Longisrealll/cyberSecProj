@@ -14,8 +14,8 @@ export function EventPage({mode, setMode}){
                     <h2 className="promotionNoHov"><i><strong>LangaraCTF!!!</strong></i></h2>
                     {/* <h3>LangaraCTF will be held soon!!!</p> */}
                     <h4>Duration: 48 hours, 20-21 Febuary</h4>
-                    <p>For more detail, please visit: <a href="https://2026.langaractf.org/" >2026.langaractf.org</a> <i>Expired</i></p>
-                    <p>LangaraCTF on Langara page: <a href="https://langara.ca/news-events/events/cybersecurity-capture-flag-competition">LangaraCTF</a> <i>Expired</i></p>
+                    <p>For more detail, please visit: <a href="#" >2026.langaractf.org</a> <i>Expired</i></p>
+                    <p>LangaraCTF on Langara page: <a href="https://langara.ca/news-events/events/cybersecurity-capture-flag-competition">LangaraCTF</a></p>
                 </div>
             </div>
             <FooterHere />

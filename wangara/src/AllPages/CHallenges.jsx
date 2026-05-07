@@ -9,29 +9,7 @@ export function ChallengesPage({mode, setMode}){
         return(
         <section className='overallBackground h1InChallenges'>
             <Navbar mode={mode} setMode={setMode} />
-            <p>We don't have any challenges just yet</p>
-            {/* <h1>Challenges</h1>
-            <div className="nameSpce">
-                <h2>Challenge name</h2>
-                <h4>Author: </h4>
-                <p>Description: </p>
-            </div>
-            <div className="nameSpce">
-                <h2>Challenge name</h2>
-                <h4>Author: </h4>
-                <p>Description: </p>
-            </div>
-            <h1>Writeups</h1>
-            <div className="nameSpce">
-                <h2>Challenge name</h2>
-                <h4>Author: </h4>
-                <p>Description: </p>
-            </div>
-            <div className="nameSpce">
-                <h2>Challenge name</h2>
-                <h4>Author: </h4>
-                <p>Description: </p>
-            </div> */}
+            <p>LangaraCTF</p>
             <FooterHere />
         </section>
     )

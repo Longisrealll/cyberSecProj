@@ -94,7 +94,6 @@ export function MemberList({mode, setMode}){
                     <p>N/A</p>
                 </div>
             </div>
-            <h2>Retired Members</h2><p class="quote"><i>"The beautiful journey of today can only begin when we learn to let go of yesterday."-Steve Maraboli</i></p>
             <div className="profileDiv">
                 <div className="pfpMar">
                     <img src={tree} alt="Data not av"></img>
