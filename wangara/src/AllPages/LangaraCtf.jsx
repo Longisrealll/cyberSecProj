@@ -18,7 +18,7 @@ export function EventPage({mode, setMode}){
                     <p>langaractf on langara page: <a href="https://langara.ca/news-events/events/cybersecurity-capture-flag-competition">langaractf</a></p>
                 </div>
             </div>
-            <div classname="block-reverse">
+            <div classname="block">
                 {/* < /*img alt="data not av"></img >*/}
                 <div>
                     <h2 classname="promotionnohov"><i><strong>Summer Social</strong></i></h2>
