@@ -15,12 +15,12 @@ export function MeetingPages({mode, setMode}){
             ---------------------------
             <h2>In person</h2>
             <figcaption>(Create taglines, weekly competitions, tutorship, discussions, strats,...)</figcaption>
-            <p><strong>TIME: </strong>FRIDAY | 10:00 am - 4:00 pm</p>
+            <p><strong>TIME: </strong>FRIDAY | 10:00 am - 12:00 pm</p>
             <p><strong>LOCATION: </strong>TBD </p>
             ---------------------------
             <h2>Online</h2>
             {/* <figcaption>(Grind CTF/writeups, keeping up with leader board)</figcaption> */}
-            <p><strong>TIME: </strong>WEEKDAYS ONLY | 6:00 pm - 10:00 pm <i>(Not strict hours, just hop on and off)</i></p>
+            <p><strong>TIME: </strong>WEEKDAYS ONLY | 8:00 pm - 10:00 pm <i>(Not strict hours, just hop on and off)</i></p>
             <p><strong>LOCATION: </strong>Discord #Grind Chamber</p>
             ---------------------------
             <p>More information, please contact us through: </p>
