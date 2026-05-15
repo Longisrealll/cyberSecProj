@@ -8,14 +8,23 @@ export function EventPage({mode, setMode}){
         <section className='overallBackground'>
             <Navbar mode={mode} setMode={setMode} />
             <h1>BIG EVENT!!!</h1>
-            <div className="block-reverse">
-                {/* < /*img alt="Data not av"></img >*/}
+            <div classname="block-reverse">
+                {/* < /*img alt="data not av"></img >*/}
                 <div>
-                    <h2 className="promotionNoHov"><i><strong>LangaraCTF!!!</strong></i></h2>
-                    {/* <h3>LangaraCTF will be held soon!!!</p> */}
-                    <h4>Duration: 48 hours, 20-21 Febuary</h4>
-                    <p>For more detail, please visit: <a href="#" >2026.langaractf.org</a> <i>Expired</i></p>
-                    <p>LangaraCTF on Langara page: <a href="https://langara.ca/news-events/events/cybersecurity-capture-flag-competition">LangaraCTF</a></p>
+                    <h2 classname="promotionnohov"><i><strong>langaractf!!!</strong></i></h2>
+                    {/* <h3>langaractf will be held soon!!!</p> */}
+                    <h4>duration: 48 hours, 20-21 febuary</h4>
+                    <p>for more detail, please visit: <a href="#" >2026.langaractf.org</a> <i>expired</i></p>
+                    <p>langaractf on langara page: <a href="https://langara.ca/news-events/events/cybersecurity-capture-flag-competition">langaractf</a></p>
+                </div>
+            </div>
+            <div classname="block-reverse">
+                {/* < /*img alt="data not av"></img >*/}
+                <div>
+                    <h2 classname="promotionnohov"><i><strong>Summer Social</strong></i></h2>
+                    {/* <h3>langaractf will be held soon!!!</p> */}
+                    <h4>duration: 10am-2pm, 13rd may 2026</h4>
+                    <p>for more detail, please visit: <a href="https://langara.ca/news-events/events/summer-social-2026" >here</a></p>
                 </div>
             </div>
             <FooterHere />
