@@ -16,7 +16,7 @@ export function MeetingPages({mode, setMode}){
             <h2>In person</h2>
             <figcaption>(Create taglines, weekly competitions, tutorship, discussions, strats,...)</figcaption>
             <p><strong>TIME: </strong>FRIDAY | 10:00 am - 12:00 pm</p>
-            <p><strong>LOCATION: </strong>TBD </p>
+            <p><strong>LOCATION: </strong>A368</p>
             ---------------------------
             <h2>Online</h2>
             {/* <figcaption>(Grind CTF/writeups, keeping up with leader board)</figcaption> */}
